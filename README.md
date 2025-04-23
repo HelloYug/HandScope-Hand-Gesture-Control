@@ -1,6 +1,6 @@
 # 🔊 Hand Gesture Volume Control with Python
 
-Control your system’s audio volume using **hand gestures** in real-time with this Python-based project using **OpenCV**, **MediaPipe**, and **pycaw**. This tool leverages your webcam to track hand landmarks and adjust volume based on the distance between your **thumb** and **index finger**.
+Control your system’s audio volume using **hand gestures** in real-time with this Python-based project using **OpenCV**, **MediaPipe**, and **pycaw**. This tool leverages your webcam to track hand landmarks and perform various tasks on the system.
 
 ---
 
@@ -18,7 +18,7 @@ Control your system’s audio volume using **hand gestures** in real-time with t
 ## ✋ Supported Gestures
 
 | Gesture                               | Action                |
-|---------------------------------------|------------------------|
+|---------------------------------------|-----------------------|
 | Thumb-index finger distance           | Adjust volume         |
 | Thumb down (others up)                | Lock the system       |
 | Thumb + pinky close                   | Mute/Unmute           |

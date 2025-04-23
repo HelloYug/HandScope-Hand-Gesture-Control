@@ -76,7 +76,7 @@ python main.py
 ## 📌 Requirements
 
 - Python 3.7 or higher
-- Webcam (720p recommended)
+- Webcam (1080p recommended)
 - Windows (for full `pycaw` compatibility)
 
 ---

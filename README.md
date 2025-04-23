@@ -11,7 +11,8 @@ This project uses **OpenCV**, **MediaPipe**, and **pycaw** to control your syste
 - System-level audio control via `pycaw`
 - Cross-platform compatibility (Windows recommended)
 
-## Available Gestures
+
+## 🙅 Available Gestures
 
 - Volume control using thumb-index distance
 - Mute/unmute with thumb and pinky finger close
@@ -74,14 +75,6 @@ python main.py
 - Run "main.py"
 - make your custom gestures in main.py in the loop
 
-
-## 🙌 Acknowledgements
-
-- [MediaPipe](https://mediapipe.dev)
-- [OpenCV](https://opencv.org)
-- [pycaw](https://github.com/AndreMiras/pycaw)
-
----
 
 ## 👨‍💻 Author
 

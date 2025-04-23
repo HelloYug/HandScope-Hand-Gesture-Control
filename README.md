@@ -1,51 +1,61 @@
-## 🔊 Hand Gesture Volume Control with Python
+# 🔊 Hand Gesture Volume Control with Python
 
-This project uses **OpenCV**, **MediaPipe**, and **pycaw** to control your system's audio volume using **hand gestures**. It tracks hand landmarks using your webcam and adjusts volume based on the distance between your thumb and index finger.
+Control your system’s audio volume using **hand gestures** in real-time with this Python-based project using **OpenCV**, **MediaPipe**, and **pycaw**. This tool leverages your webcam to track hand landmarks and adjust volume based on the distance between your **thumb** and **index finger**.
 
+---
 
 ## 📸 Features
 
-- Real-time hand tracking using webcam
-- Volume control using thumb-index distance
-- Clean GUI with volume percentage display
-- System-level audio control via `pycaw`
-- Cross-platform compatibility (Windows recommended)
+- Real-time hand tracking via webcam
+- Volume control using thumb-index finger distance
+- Mute/unmute, screenshot, and desktop control gestures
+- Visual volume percentage display
+- System-level audio control (via `pycaw`)
+- Basic cross-platform support (Windows recommended for full features)
 
+---
 
-## 🙅 Available Gestures
+## ✋ Supported Gestures
 
-- Volume control using thumb-index distance
-- Mute/unmute with thumb and pinky finger close
-- Screenshot gesture: thumb and middle finger touch
-- Run Notepad : victory gesture
-- Desktop switching: Detect palm swipe (all fingers up)
-- Voice message: Yo gesture
+| Gesture                               | Action                |
+|---------------------------------------|------------------------|
+| Thumb-index finger distance           | Adjust volume         |
+| Thumb down (others up)                | Lock the system       |
+| Thumb + pinky close                   | Mute/Unmute           |
+| Thumb + middle finger touch           | Take a screenshot     |
+| Victory (index + middle finger up)    | Launch Notepad        |
+| Palm open (all fingers up)            | Switch desktop        |
+| Yo gesture (index + pinky up)         | Voice message trigger |
+
+---
 
 ## 🧠 Tech Stack
 
-| Technology      | Purpose                                  |
-|------------------|------------------------------------------|
-| Python           | Core programming language                |
-| OpenCV           | Image processing and webcam feed         |
-| MediaPipe        | Hand tracking and landmark detection     |
-| pycaw            | System volume control (Windows only)     |
-| pyttsx3          | Text-to-speech for feedback              |
-| pyautogui        | Screen interaction (optional)            |
-| psutil           | Process and system monitoring            |
-| Pillow           | Screenshot or GUI-based tasks            |
+| Technology  | Role                                  |
+|-------------|---------------------------------------|
+| Python      | Main programming language             |
+| OpenCV      | Webcam feed and image processing      |
+| MediaPipe   | Hand landmark tracking                |
+| pycaw       | Volume control on Windows             |
+| pyttsx3     | Text-to-speech feedback               |
+| pyautogui   | GUI automation                        |
+| psutil      | Process and system monitoring         |
+| Pillow      | Image handling and screenshot capture |
 
+---
 
 ## 📂 Project Structure
-
-project-folder/
+```plaintext
+hand-volume-control/
 │
-├── MouseControl.py           # Custom mouse movement control
-├── VirtualDraw.py            # Custom Draw in the air  
-├── HandTrackingModule.py     # Custom hand tracking logic using MediaPipe
-├── main.py                   # Main script to run volume control
-├── requirements.txt          # Python dependencies
-└── README.md                 # You're here
-
+├── main.py                 # Main script for gesture control
+├── HandTrackingModule.py   # Hand detection and gesture logic
+├── MouseControl.py         # Experimental mouse gesture control
+├── VirtualDraw.py          # Air drawing using finger gestures
+├── requirements.txt        # List of Python dependencies
+└── README.md               # Project documentation
+```
+---
 
 ## 🚀 Getting Started
 
@@ -62,21 +72,24 @@ pip install -r requirements.txt
 
 python main.py
 
-
+---
 ## 📌 Requirements
 
 - Python 3.7 or higher
-- Webcam (preferably 720p or above)
+- Webcam (720p recommended)
 - Windows (for full `pycaw` compatibility)
 
+---
+## ⚙️ Configuration
 
-## ⚙️ Configuration (Optional)
+You can customize or add new gestures inside the main.py loop:
+- Modify landmark logic
+- Map gesture to specific functions
+- Add new gesture recognition patterns
 
-- Run "main.py"
-- make your custom gestures in main.py in the loop
-
-
+---
 ## 👨‍💻 Author
 
-**Yug Agarwal** – [@HelloYug](https://github.com/HelloYug)
-**E-Mail:** - [yugagarwal704@gmail.com](mailto:yugagarwal704@gmail.com)
+**Yug Agarwal**
+- 📧 [yugagarwal704@gmail.com](mailto:yugagarwal704@gmail.com)
+- 🔗 GitHub – [@HelloYug](https://github.com/HelloYug)

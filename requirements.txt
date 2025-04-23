@@ -1,0 +1,9 @@
+opencv-python
+numpy
+pycaw
+Pillow
+mediapipe
+pyttsx3
+psutil
+pyautogui
+comtypes

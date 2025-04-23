@@ -55,12 +55,16 @@ def is_notepad_running():
     return False
 
 def lock_system():
-    """Locks the system based on the operating system."""
     system_platform = platform.system()
-    try:
+    if system_platform == "Windows":
         os.system("rundll32.exe user32.dll,LockWorkStation")
-    except Exception as e:
-        print("System Error: System locking not supported on this OS.")
+    elif system_platform == "Linux":
+        os.system("gnome-screensaver-command -l")
+    elif system_platform == "Darwin":  # macOS
+        os.system("/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend")
+    else:
+        print("Locking the system is not supported on this OS.")
+
 
 while True:
     success, img = cap.read()

@@ -1,6 +1,6 @@
-# 🔊 Hand Gesture Volume Control with Python
+# 🔊 Hand Gesture System Control with Python
 
-Control your system’s audio volume using **hand gestures** in real-time with this Python-based project using **OpenCV**, **MediaPipe**, and **pycaw**. This tool leverages your webcam to track hand landmarks and perform various tasks on the system.
+Control your system using **hand gestures** in real-time with this Python-based project using **OpenCV**, **MediaPipe**, and **pycaw**. This tool leverages your webcam to track hand landmarks and perform various tasks on the system.
 
 ---
 
